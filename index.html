@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Orden de eliminación</title>
+    <link rel="shortcut icon" href="logo.png" />
+
+    
+
+    <style>
+      body {
+        background: linear-gradient(180deg, #ffcb05, #ffffff);
+        margin: 0;
+        font-family: Arial;
+        text-align: center;
+      }
+    
+      /* ===== TÍTULO ===== */
+      #titulo {
+        padding: 15px;
+        background: linear-gradient(90deg, #e60012, #ffcb05);
+        color: #1f1f1f;
+        font-size: 1.8em;
+        font-weight: bold;
+        text-shadow: 2px 2px 0 #fff;
+      }
+    
+      /* ===== NAV ===== */
+      nav {
+        background-color: #e60012;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 12px;
+        margin-bottom: 25px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      }
+    
+      nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+    
+      nav ul li a {
+        background-color: #ffcb05;
+        color: #2a2a2a;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 8px 14px;
+        border-radius: 20px;
+        transition: 0.3s;
+        font-size: clamp(12px, 3vw, 16px);
+        border: 2px solid #2a2a2a;
+      }
+    
+      nav ul li a:hover {
+        background-color: #ffe066;
+        transform: scale(1.05);
+      }
+    
+      /* ===== CONTENEDOR TABLA ===== */
+      .table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin: 0 auto;
+        max-width: 95%;
+      }
+    
+      /* ===== TABLA ===== */
+      table {
+        width: 60%;
+        border-collapse: collapse;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+        font-size: clamp(12px, 2.5vw, 14px);
+        margin: 0 auto 30px;
+        background-color: white;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+    
+      th, td {
+        border: 1px solid #ccc;
+        padding: 6px;
+        text-align: center;
+        word-wrap: break-word;
+        white-space: nowrap;
+      }
+    
+      /* Encabezado */
+      th {
+        background-color: #e60012;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+    
+      caption {
+        font-size: 1.5em;
+        margin-bottom: 12px;
+        font-weight: bold;
+        color: #e60012;
+      }
+    
+      /* Subtítulos */
+      .subtitulo {
+        background-color: #ffffff;
+        font-weight: bold;
+      }
+    
+      /* ===== COLORES ORIGINALES (SIN CAMBIOS) ===== */
+      .eliminado {
+        background-color: #FF91A4;
+      }
+    
+      .ganador {
+        background-color: gold;
+      }
+    
+      .subcampeon {
+        background-color: silver;
+      }
+    
+      .tercero {
+        background-color: tan;
+      }
+
+      .retirado {
+  background-color: #FFB694;
+  color: black;
+}
+    
+      /* ===== RESPONSIVE ===== */
+      @media (max-width: 600px) {
+        table {
+          font-size: 12px;
+          width: 95%;
+        }
+    
+        nav ul {
+          flex-direction: column;
+        }
+    
+        nav ul li a {
+          width: 100%;
+          display: block;
+        }
+    
+        th, td {
+          padding: 6px;
+        }
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <header id="titulo">
+      <h1>Quien soy - 6° Edición</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Top25.html">Top 25</a></li>
+        <li><a href="tabla.html">Tabla Final</a></li>
+      </ul>
+    </nav>
+
+    <main class="container mt-3">
+      <div class="table-container">
+        <table>
+          <caption>Orden de eliminación</caption>
+          <thead>
+            <tr>
+              <th>Participante</th>
+              <th>Orden</th>
+              <th>Batalla</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="subtitulo"><td>Yoselin</td><td class="eliminad">En competencia</td><td>--</td></tr>
+            <tr class="subtitulo"><td>Anthony</td><td class="eliminad">En competencia</td><td>--</td></tr>
+            <tr class="subtitulo"><td>Franco</td><td class="eliminad">En competencia</td><td>--</td></tr>
+            <tr class="subtitulo"><td>Nobody</td><td class="eliminad">En competencia</td><td>--</td></tr>
+            <tr class="subtitulo"><td>Squix 14</td><td class="eliminad">En competencia</td><td>--</td></tr>
+            <tr class="subtitulo"><td>Ghost 2</td><td class="eliminad">En competencia</td><td>--</td></tr>
+            <tr class="subtitulo"><td>Helena</td><td class="eliminad">En competencia</td><td>--</td></tr>
+            <tr class="subtitulo"><td>Luis</td><td class="eliminad">En competencia</td><td>--</td></tr>
+            <tr class="subtitulo"><td>Sandro</td><td class="eliminad">En competencia</td><td>--</td></tr>
+            <tr class="subtitulo"><td>Aizen</td><td class="eliminad">En competencia</td><td>--</td></tr>
+            <tr class="subtitulo"><td>Andrés</td><td class="eliminad">En competencia</td><td>--</td></tr>
+            <tr class="subtitulo"><td>Ángel</td><td class="eliminad">En competencia</td><td>--</td></tr>
+            <tr class="subtitulo"><td>Broquer</td><td class="eliminad">En competencia</td><td>--</td></tr>
+            <tr class="subtitulo"><td>Delta</td><td class="eliminad">En competencia</td><td>--</td></tr>
+            <tr class="subtitulo"><td>Gustavo</td><td class="eliminad">En competencia</td><td>--</td></tr>
+            <tr class="subtitulo"><td>Franklin</td><td class="eliminad">En competencia</td><td>--</td></tr>
+            <tr class="subtitulo"><td>José</td><td class="eliminad">En competencia</td><td>--</td></tr>
+            <tr class="subtitulo"><td>Lizzy</td><td class="eliminad">En competencia</td><td>--</td></tr>
+            <tr class="subtitulo"><td>Paxlo</td><td class="eliminad">En competencia</td><td>--</td></tr>
+            <tr class="subtitulo"><td>Reder</td><td class="eliminad">En competencia</td><td>--</td></tr>
+            <tr class="subtitulo"><td>Sation</td><td class="eliminad">En competencia</td><td>--</td></tr>
+            <tr class="subtitulo"><td>Tsuki</td><td class="eliminad">En competencia</td><td>--</td></tr>
+            <tr class="subtitulo"><td>Sebas</td><td class="eliminad">En competencia</td><td>--</td></tr>
+            <tr class="subtitulo"><td>Brian</td><td class="eliminad">En competencia</td><td>--</td></tr>
+            <tr class="subtitulo"><td>Messo</td><td class="eliminad">En competencia</td><td>--</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
