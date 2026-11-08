@@ -171,6 +171,11 @@ caption {
   color: black;
 }
 
+.indefi {
+  background-color: #aaa;
+  color: black;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   table {
